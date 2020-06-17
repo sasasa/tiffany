@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* reset */
+html,body,h1,h2,h3,h4,h5,h6,header,div {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  vertical-align: bottom;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+
+/* header */
+header {
+  padding: 16px 24px;
+  border-top: 4px solid #81d8d0;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  /* top: -140px; */
+  transition: top 0.4s;
+}
+header .top_container {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+header svg {
+  transform: translate3d(0px, 0px, 0px);
+  width: 16px!important;
+  height: 16px!important;
+}
+header h1 a {
+  background-image: url(img/footer-sprite.jpg);
+  background-position: -3px -1895px;
+  width: 1263px;
+  height: 157px;
+  display: inline-block;
+  zoom: .15;
+  -moz-transform: scale(.15);
+  -moz-transform-origin: 0 0;
+}
+header ul {
+  display: flex;
+}
+header ul li:not(:last-child) {
+  margin-right: 40px;
+}
+header .left {
+  flex: 43%;
+}
+header .center {
+  flex: 40%;
+}
+header .right {
+  flex: 17%;
+  font-size: 0.7rem;
+}
+header .menu {
+  flex: 100%;
+  align-self: center;
+  font-size: 0.9rem;
+}
+/* ダミーコンテンツ */
+video {
+  width: 100%;
+}
